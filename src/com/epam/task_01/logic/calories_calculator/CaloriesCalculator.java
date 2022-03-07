@@ -1,24 +1,26 @@
 package com.epam.task_01.logic.calories_calculator;
 
 import com.epam.task_01.entity.vegetable.Vegetable;
-import com.epam.task_01.salad.Salad;
-
 import java.util.ArrayList;
 
 public class CaloriesCalculator {
 
     public double calculate(Vegetable vegetable) {
-        double amount;
         final int HUNDRED_GRAMS = 100;
+        double amount;
 
-        amount = vegetable.getWeight() * vegetable.getVegetable().getVALUE() / HUNDRED_GRAMS;
+        amount = vegetable.getWeight() * vegetable.getCALORIES_IN_100_GRAMS() / HUNDRED_GRAMS;
         return amount;
     }
 
-    public double calculate(ArrayList<Vegetable> salad) {
+    /*
+    Перегруженный метод calculate для подсчета калорий в салате, который вызывает внутри цикла
+    метод calculate(Vegetable vegetable)
+     */
+    public double calculate(ArrayList<Vegetable> vegetables) {
         double amount = 0;
 
-        for (Vegetable vegetable : salad) {
+        for (Vegetable vegetable : vegetables) {
             amount += calculate(vegetable);
         }
 

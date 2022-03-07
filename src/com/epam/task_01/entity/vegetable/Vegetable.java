@@ -5,7 +5,7 @@ import com.epam.task_01.entity.EnergyValueOfVegetables;
 import java.util.Objects;
 
 public abstract class Vegetable {
-    private EnergyValueOfVegetables vegetable;
+    private final double CALORIES_IN_100_GRAMS;
     private String title;
     private double caloriesAmount;
     private double weight;
@@ -13,15 +13,15 @@ public abstract class Vegetable {
     public Vegetable(String title, double weight, EnergyValueOfVegetables vegetable) {
         this.title = title;
         this.weight = weight;
-        this.vegetable = vegetable;
+        CALORIES_IN_100_GRAMS = vegetable.getVALUE();
     }
 
-    public Vegetable() {
-
+    public Vegetable(EnergyValueOfVegetables vegetable) {
+        CALORIES_IN_100_GRAMS = vegetable.getVALUE();
     }
 
-    public EnergyValueOfVegetables getVegetable() {
-        return vegetable;
+    public double getCALORIES_IN_100_GRAMS() {
+        return CALORIES_IN_100_GRAMS;
     }
 
     public String getTitle() {
@@ -55,5 +55,15 @@ public abstract class Vegetable {
     @Override
     public int hashCode() {
         return Objects.hash(title, caloriesAmount, weight);
+    }
+
+    @Override
+    public String toString() {
+        return title + "{" +
+                "CALORIES_IN_100_GRAMS=" + CALORIES_IN_100_GRAMS +
+                ", title='" + title + '\'' +
+                ", caloriesAmount=" + caloriesAmount +
+                ", weight=" + weight +
+                '}';
     }
 }

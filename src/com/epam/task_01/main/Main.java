@@ -7,6 +7,11 @@ import com.epam.task_01.entity.vegetable.*;
 import com.epam.task_01.entity.EnergyValueOfVegetables;
 import com.epam.task_01.salad.Salad;
 
+/*
+ Определить иерархию овощей. Сделать салат. Посчитать калорийность.
+ Провести сортировку овощей для салата на основе одного из параметров.
+ Найти овощи в салате, соответствующие заданному диапазону калорийности.
+ */
 public class Main {
     public static void main(String[] args) {
         VegetableToCook potato = new Potato("potato",

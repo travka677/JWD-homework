@@ -8,8 +8,4 @@ public class Broccoli extends VegetableToCook {
         super(title, weight, vegetable, cooking_time);
     }
 
-    public Broccoli(int cooking_time){
-        super(cooking_time);
-    }
-
 }

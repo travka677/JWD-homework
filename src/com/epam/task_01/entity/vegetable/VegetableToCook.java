@@ -12,10 +12,6 @@ public abstract class VegetableToCook extends Vegetable {
         this.COOKING_TIME = cooking_time;
     }
 
-    public VegetableToCook(int cooking_time) {
-        this.COOKING_TIME = cooking_time;
-    }
-
     public int getCOOKING_TIME() {
         return COOKING_TIME;
     }
@@ -23,7 +19,7 @@ public abstract class VegetableToCook extends Vegetable {
     @Override
     public String toString() {
         return "VegetableToCook{" +
-                "cookingTime=" + COOKING_TIME+
+                "COOKING_TIME=" + COOKING_TIME +
                 '}';
     }
 
