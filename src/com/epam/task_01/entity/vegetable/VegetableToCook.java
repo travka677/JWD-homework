@@ -7,9 +7,9 @@ import java.util.Objects;
 public abstract class VegetableToCook extends Vegetable {
     private final int COOKING_TIME;
 
-    public VegetableToCook(String title, double weight, EnergyValueOfVegetables vegetable, int cooking_time) {
+    public VegetableToCook(String title, double weight, EnergyValueOfVegetables vegetable, int cookingTime) {
         super(title, weight, vegetable);
-        this.COOKING_TIME = cooking_time;
+        this.COOKING_TIME = cookingTime;
     }
 
     public int getCOOKING_TIME() {

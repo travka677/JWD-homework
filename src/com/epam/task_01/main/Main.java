@@ -1,12 +1,11 @@
 package com.epam.task_01.main;
 
 import com.epam.task_01.logic.calories_calculator.CaloriesCalculator;
-import com.epam.task_01.logic.cleaning.impl.CleaningVegetableImpl;
 import com.epam.task_01.logic.comporator.VegetableCaloriesComparator;
-import com.epam.task_01.logic.cooking.impl.CookingVegetablesImpl;
 import com.epam.task_01.entity.vegetable.*;
 import com.epam.task_01.entity.EnergyValueOfVegetables;
 import com.epam.task_01.entity.salad.Salad;
+import com.epam.task_01.entity.сhef.Chef;
 
 /*
  Определить иерархию овощей. Сделать салат. Посчитать калорийность.
@@ -30,15 +29,14 @@ public class Main {
                 50,
                 EnergyValueOfVegetables.ONION);
 
-        CleaningVegetableImpl cleaning = new CleaningVegetableImpl();
-        cleaning.wash(potato);
-        cleaning.wash(cabbage);
-        cleaning.wash(broccoli);
-        cleaning.wash(onion);
+        Chef chef = new Chef("Gordon");
+        chef.wash(potato);
+        chef.wash(cabbage);
+        chef.wash(broccoli);
+        chef.wash(onion);
 
-        CookingVegetablesImpl cooking = new CookingVegetablesImpl();
-        cooking.boil(potato);
-        cooking.fry(broccoli);
+        chef.boil(potato);
+        chef.fry(broccoli);
 
         Salad simpleSalad = new Salad(new VegetableCaloriesComparator());
         simpleSalad.getSalad().add(potato);
