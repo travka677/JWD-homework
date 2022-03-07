@@ -61,7 +61,6 @@ public abstract class Vegetable {
     public String toString() {
         return title + "{" +
                 "CALORIES_IN_100_GRAMS=" + CALORIES_IN_100_GRAMS +
-                ", title='" + title + '\'' +
                 ", caloriesAmount=" + caloriesAmount +
                 ", weight=" + weight +
                 '}';

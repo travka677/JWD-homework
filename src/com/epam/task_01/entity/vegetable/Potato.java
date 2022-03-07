@@ -8,5 +8,4 @@ public class Potato extends VegetableToCook {
         super(title, weight, vegetable, cookingTime);
     }
 
-
 }

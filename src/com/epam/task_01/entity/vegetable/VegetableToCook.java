@@ -18,8 +18,11 @@ public abstract class VegetableToCook extends Vegetable {
 
     @Override
     public String toString() {
-        return "VegetableToCook{" +
-                "COOKING_TIME=" + COOKING_TIME +
+        return getTitle() + "{" +
+                "CALORIES_IN_100_GRAMS=" + getCALORIES_IN_100_GRAMS() +
+                ", caloriesAmount=" + getCaloriesAmount() +
+                ", weight=" + getWeight() +
+                ", COOKING_TIME=" + COOKING_TIME +
                 '}';
     }
 
