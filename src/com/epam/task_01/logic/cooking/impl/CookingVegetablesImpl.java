@@ -7,11 +7,11 @@ public class CookingVegetablesImpl implements CookingVegetables {
 
     @Override
     public void boil(VegetableToCook vegetable) {
-        System.out.println("Boiling " + vegetable.getTitle() + " for " + vegetable.getCOOKING_TIME() + " minutes");
+        System.out.println("Boiling " + vegetable.getTITLE() + " for " + vegetable.getCOOKING_TIME() + " minutes");
     }
 
     @Override
     public void fry(VegetableToCook vegetable) {
-        System.out.println("Frying " + vegetable.getTitle() + " for " + vegetable.getCOOKING_TIME() + " minutes");
+        System.out.println("Frying " + vegetable.getTITLE() + " for " + vegetable.getCOOKING_TIME() + " minutes");
     }
 }

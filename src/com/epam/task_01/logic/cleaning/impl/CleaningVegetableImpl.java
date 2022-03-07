@@ -7,6 +7,6 @@ public class CleaningVegetableImpl implements CleaningVegetable {
 
     @Override
     public void wash(Vegetable vegetable) {
-        System.out.println("Washing the " + vegetable.getTitle());
+        System.out.println("Washing the " + vegetable.getTITLE());
     }
 }

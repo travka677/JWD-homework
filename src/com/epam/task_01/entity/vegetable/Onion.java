@@ -8,7 +8,4 @@ public class Onion extends Vegetable {
         super(title, weight, vegetable);
     }
 
-    public Onion(EnergyValueOfVegetables vegetable) {
-        super(vegetable);
-    }
 }

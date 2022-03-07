@@ -6,7 +6,7 @@ import com.epam.task_01.logic.comporator.VegetableCaloriesComparator;
 import com.epam.task_01.logic.cooking.impl.CookingVegetablesImpl;
 import com.epam.task_01.entity.vegetable.*;
 import com.epam.task_01.entity.EnergyValueOfVegetables;
-import com.epam.task_01.salad.Salad;
+import com.epam.task_01.entity.salad.Salad;
 
 /*
  Определить иерархию овощей. Сделать салат. Посчитать калорийность.
@@ -48,6 +48,9 @@ public class Main {
 
         System.out.println("Our salad consists of: ");
         System.out.println(simpleSalad.getSalad());
+
+        System.out.println("Vegetables in the calorie range:");
+        System.out.println(simpleSalad.getVegetablesInCalorieRange(20, 100));
 
         CaloriesCalculator calculator = new CaloriesCalculator();
 
