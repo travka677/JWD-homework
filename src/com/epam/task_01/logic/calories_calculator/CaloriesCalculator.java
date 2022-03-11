@@ -11,7 +11,6 @@ public class CaloriesCalculator {
         for (Vegetable vegetable : vegetables) {
             amount += (vegetable.getWeight() * vegetable.getCALORIES_IN_100_GRAMS() / vegetable.getHUNDRED_GRAMS());
         }
-
         return amount;
     }
 
